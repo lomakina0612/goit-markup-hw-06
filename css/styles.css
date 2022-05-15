@@ -22,10 +22,6 @@
     --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
-*{
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
     background-color: var(--background-white-color);
@@ -513,17 +509,16 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 200px;
-    height: 50px;
+    
     margin-left: 12px;
+    padding: 10px 28px;
 
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88;    
+    line-height: 1.87;    
     letter-spacing: 0.06em;
     color: var(--footer-color);
     fill: currentColor;
@@ -755,15 +750,27 @@ a{
     color: var(--nav-color);
 }
 
+.input-label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.area-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .form-field{
     position: relative;
+    display: block;
 }
-.form-label{
+
+.form-text{
     display: block;
     margin-bottom: 4px;
 
     font-size: 12px;
-    line-height: 1.67;   
+    line-height: 1.16;   
     letter-spacing: 0.01em;
     
     color: var(--text-color);
@@ -804,7 +811,7 @@ a{
 
 .form-area{
     width: 100%;
-    min-height: 120px;
+    height: 120px;
     padding: 12px 16px;
 
     resize: none;
@@ -863,7 +870,8 @@ a{
     background-color: var(--accent-color);   
     border: 2px solid var(--accent-color);
 }
-.check-label{    
+
+.check-text{    
     margin-left: 7px;
 
     font-size: 14px;
@@ -879,6 +887,7 @@ a{
 
 .modal-btn{
     margin: 0 auto;
+    padding: 10px 55px;
 }
 
 .submit-btn:hover, .submit-btn:focus{
